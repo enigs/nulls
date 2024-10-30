@@ -1,0 +1,10 @@
+[package]
+name = "nulls"
+version = "0.1.0"
+edition = "2021"
+authors = ["Mark Liwag <markhenry.liwag@gmail.com>"]
+
+[dependencies]
+serde = { version = "1.0.195", features = ["derive"] }
+serde_json = { version = "1.0.111", features = ["preserve_order", "raw_value"] }
+sqlx = { version = "0.8.0", features = ["runtime-tokio", "postgres", "chrono", "json"] }
